@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions - Visit Ethiopia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">     <span class="logo"></span>
+        <a href="index.html">
+          
+     
+          <span>Visit Ethiopia</span>
+          
+          </a>
+
+        
+      </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="tips_contact.html">Travel Tips</a>
+      <a href="culture.html">Culture</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="tips_contact.html#contact">Plan Your Visit</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
+  <div style="text-align: center; font-weight: 600; font-size: 1.2rem;">
+            The project is made by students and it is used for teaching only.
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image:url('images/Gladababon.jpg');">
+    <div class="hero-text">
+      <h1>Explore Ethiopia's Natural Wonders</h1>
+      <p>From towering mountains to dramatic deserts, Ethiopia is full of breathtaking sights.</p>
+    </div>
+  </section>
+
+  <section class="featured-destinations">
+    <h2>Top Attractions</h2>
+    <div class="grid cols-3">
+      <div class="card"><img src="images/lalibela.jpg" alt="Lalibela"><h4>Lalibela</h4><p>Lalibela’s rock-hewn churches are remarkable medieval structures carved from solid rock, serving as a profound center of spiritual pilgrimage in Ethiopia.</p></div>
+      <div class="card"><img src="images/ajora.jpg" alt="Ajora Falls"><h4>Ajora Falls</h4><p>Ajora Twin Falls are two spectacular side-by-side waterfalls in southern Ethiopia, known for their lush scenery and dramatic drop.</p></div>
+      <div class="card"><img src="images/semen.jpg" alt="Semien Mountains"><h4>Semien Mountains</h4><p>The Semien Mountains are a dramatic highland range in northern Ethiopia, famed for their rugged peaks, deep valleys, and unique wildlife.</p></div>
+      <div class="card"><img src="images/danakil.jpg" alt="Danakil Depression"><h4>Danakil Depression</h4><p>The Danakil Depression is a scorching, low-lying region in northeastern Ethiopia known for its colorful sulfur springs, salt flats, and extreme heat.</p></div>
+      <div class="card"><img src="images/aksum.jpg" alt="Aksum Obelisk"><h4>Aksum Obelisk</h4><p>The Aksum Obelisk is an ancient, carved granite monument from the Aksumite Empire, symbolizing the kingdom’s architectural skill and royal tomb tradition.</p></div>
+      <div class="card"><img src="images/fasilides.jpg" alt="Fasilides Castles"><h4>Fasilides Castles</h4><p>Fasilides Castles, located in Gondar, are a group of impressive 17th-century stone palaces that showcase Ethiopia’s unique royal architecture.</p></div>
+      <div class="card"><img src="images/gerd.jpg" alt="GERD"><h4>GERD Dam</h4><p>The Grand Ethiopian Renaissance Dam (GERD), a massive hydroelectric project on the Blue Nile, was built by Ethiopia to generate electricity and promote national development. It is the largest dam in Africa, with a generating capacity of 5,150 MW.</p></div>
+      <div class="card"><img src="images/zebra.jpg" alt="wild animals in Ethiopia"><h4>wild animals in Ethiopia</h4><p>Ethiopia hosts unique wildlife such as the Ethiopian wolf, gelada baboon, Walia ibex, mountain nyala, Graffes, zebraand  many distinctive birds.</p></div>
+      <div class="card"><img src="images/walia.jpg" alt="Walia ibex"><h4>walia ibex exists only in ethiopia</h4><p>wild mountain goat found only in Ethiopia, making it an endemic species.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+ 
+  
+
+<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
+  <div><strong>contacts : Ethiopian Tourism Organization </strong><p>phone number : +2511916481477</p>
+  <p>email: visitethiopia@gmai.com</p>
+  </div>
+  <div>
+  <strong>  Location</strong>
+  <p>
+    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
+      View on Google Maps
+    </a>
+  </p>
+
+</div>
+
+  <!--<h2>Recommended Hotels</h2>-->
+</footer>
+
+<script src="js/scripts.js"></script>
+
+<!-- ✅ LIGHTBOX IMAGE VIEWER ADDED BELOW (Only New Feature) -->
+  <style>
+    #imageLightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    #imageLightbox img {
+      max-width: 100%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    #closeLightbox {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Lightbox Container -->
+  <div id="imageLightbox">
+    <span id="closeLightbox">✖</span>
+    <img src="" id="lightboxImg">
+  </div>
+
+  <script>
+    // Get all images on the page
+    const allImages = document.querySelectorAll("img");
+
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const closeLightbox = document.getElementById("closeLightbox");
+
+    // Add click event to each image
+    allImages.forEach(img => {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    // Close the lightbox
+    closeLightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // Close when clicking outside the image
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+      const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  toggle.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  });
+  </script>
+
+
+</body>
+</html>
+
+
+
+

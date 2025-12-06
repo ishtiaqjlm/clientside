@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Ethiopia - Visit Ethiopia</title>
+
+<!-- LINK TO SEPARATE CSS FILE -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">     <span class="logo"></span>
+        <a href="index.html">
+          
+     
+          <span>Visit Ethiopia</span>
+          
+          </a>
+
+        
+      </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="tips_contact.html">Travel Tips</a>
+      <a href="culture.html">Culture</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="tips_contact.html#contact">Plan Your Visit</a>
+    </nav>
+
+    <button class="menu-toggle">☰</button>
+  </div>
+  <div style="text-align: center; font-weight: 600; font-size: 1.2rem;">
+            The project is made by students and it is used for teaching only.
+  </div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" style="background-image:url('images/ethioflag.jpg');">
+  <div class="hero-text">
+    <h1>About Ethiopia</h1>
+    <p>Explore the history, geography, and people of this ancient land.</p>
+  </div>
+</section>
+
+<!-- CONTENT SECTIONS -->
+<section class="about-info">
+  <div class="grid cols-2">
+
+    <div class="card">
+      <h3>History</h3>
+      <p>
+        Ethiopia is one of the world’s oldest nations, home to ancient human
+        origins and early civilizations like Dʿmt and Aksum. The Aksumite Empire
+        became a major power and adopted Christianity in the 4th century.
+        Medieval Ethiopia, led by the Solomonic dynasty, remained independent and
+        defeated Italy at the Battle of Adwa in 1896.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Geography</h3>
+      <p>
+        Ethiopia is a mountainous country with highlands, plateaus, and many
+        rivers—including the Blue Nile, which contributes about 86% of the Nile.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h3>People & Languages</h3>
+    <p>
+      Ethiopia is a diverse country with over 120 ethnic groups and more than 80
+      languages, including Amharic, Oromo, Tigrinya, and Somali.
+    </p>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+  <h2 style="text-align:center; color:var(--primary);">Map of Ethiopia</h2>
+  <div class="map-container">
+    <iframe
+      width="100%"
+      height="100%"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m2!2m1!1sethiopia">
+    </iframe>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  
+
+<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
+  <div><strong>contacts : Ethiopian Tourism Organization </strong><p>phone number : +2511916481477</p>
+  <p>email: visitethiopia@gmai.com</p>
+  </div>
+  <div>
+  <strong>  Location</strong>
+  <p>
+    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
+      View on Google Maps
+    </a>
+  </p>
+
+</div>
+
+  <!--<h2>Recommended Hotels</h2>-->
+</footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  toggle.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+
+</body>
+</html>

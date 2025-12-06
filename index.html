@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Visit Ethiopia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">     <span class="logo"></span>
+        <a href="index.html">
+          
+     
+          <span>Visit Ethiopia</span>
+          
+          </a>
+
+        
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="tips_contact.html">Travel Tips</a>
+        <a href="culture.html">Culture</a>
+        <a href="about.html">About</a>
+        <a class="cta" href="tips_contact.html#contact">Plan Your Visit</a>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <div style="text-align: center; font-weight: 600; font-size: 1.2rem;">
+            The project is made by students and it is used for teaching only.
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="background-image:url('images/semen.jpg');">
+      <div class="hero-text">
+        <h1>Discover the Beautiful Land of Ethiopia</h1>
+        <p>Explore breathtaking landscapes, rich culture, ancient history, and vibrant traditions.</p>
+        <a class="btn" href="attractions.html">Explore Destinations</a>
+      </div>
+    </section>
+
+    <section class="Ethiopian cultural  Dances">
+      <h2>Ethiopian cultural  Dances</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <img src="images/dance.jpg" alt="wolaita cultural dance">
+          <h4>Wolaita cultural dance</h4>
+          <p>A southern Ethiopian dance with energetic, rhythmic group steps.</p>
+        </div>
+        <div class="card">
+          <img src="images/eskista.jpg" alt="amhara cultural dance ">
+          <h4>Eskista</h4>
+          <p>An Amhara dance with rapid shoulder and upper-body.</p>
+        </div>
+        <div class="card">
+          <img src="images/oromo.jpg" alt="oromo cultural dance">
+          <h4>oromo cultural dance</h4>
+          <p>Stunning highlands and trekking adventures.</p>
+        </div>
+    </section>
+
+    <section class="Ethiopian cultural foods ">
+      <h2>Ethiopian cultural  foods </h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <img src="images/dorowot.jpg" alt="wolaita cultural dance">
+          <h4>Doro wot </h4>
+          <p>A spicy Ethiopian chicken stew cooked with berbere and slow-caramelized onions.</p>
+        </div>
+        <div class="card">
+          <img src="images/beyayinet.jpg" alt="Beyayinet">
+          <h4>Ajora Falls</h4>
+          <p>A traditional Ethiopian dish of injera topped with various stews, vegetables, and meats.</p>
+        </div>
+        <div class="card">
+          <img src="images/tiresiga.jpg" alt="oromo cultural dance">
+          <h4>Tire siga</h4>
+          <p>Raw beef seasoned and often served with spices, a traditional Ethiopian delicacy.</p>
+        </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+
+
+<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
+  <div><strong>contacts : Ethiopian Tourism Organization </strong><p>phone number : +2511916481477</p>
+  <p>email: visitethiopia@gmai.com</p>
+  </div>
+  <div>
+  <strong>  Location</strong>
+  <p>
+    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
+      View on Google Maps
+    </a>
+  </p>
+
+</div>
+
+  <!--<h2>Recommended Hotels</h2>-->
+</footer>
+
+  <script src="js/scripts.js"></script>
+
+  <!-- ✅ LIGHTBOX IMAGE VIEWER ADDED BELOW (Only New Feature) -->
+  <style>
+    #imageLightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    #imageLightbox img {
+      max-width: 100%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    #closeLightbox {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Lightbox Container -->
+  <div id="imageLightbox">
+    <span id="closeLightbox">✖</span>
+    <img src="" id="lightboxImg">
+  </div>
+
+  <script>
+    // Get all images on the page
+    const allImages = document.querySelectorAll("img");
+
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const closeLightbox = document.getElementById("closeLightbox");
+
+    // Add click event to each image
+    allImages.forEach(img => {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    // Close the lightbox
+    closeLightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // Close when clicking outside the image
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+   toggle.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  });
+  </script>
+
+</body>
+</html>

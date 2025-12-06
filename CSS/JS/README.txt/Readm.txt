@@ -1,0 +1,15 @@
+Visit the Beautiful Land Ethiopia - Client-side website
+Files included:
+- index.html (Home)
+- attractions.html (Natural Attractions & Top Destinations)
+- tips_contact.html (Travel Tips & Contact)
+- culture.html (Culture & Traditions)
+- about.html (About Ethiopia)
+- css/style.css
+- js/scripts.js
+
+Notes:
+- Fully client-side (static). No server required.
+- Responsive design (desktop/tablet/mobile) with CSS media queries.
+- Multi-page site (not single-page), fulfilling the project requirement.
+- Contact form performs client-side validation (mock submit).

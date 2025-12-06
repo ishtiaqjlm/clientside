@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Requirements – Responsive Grid & Accessibility</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1.2em;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 700px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Project Requirements</h1>
+    <p><strong>Task:</strong> Pre-exam assignment — Responsive Design, CSS Grid, and Accessibility.</p>
+
+    <h2>1. General Requirements</h2>
+    <ul>
+      <li>Use <strong>CSS Grid</strong> for the layout.</li>
+      <li>Must respond to screen width changes using a breakpoint at <strong>1024px</strong>.</li>
+      <li>Accessibility must be considered:
+        <ul>
+          <li>Semantic HTML</li>
+          <li>Alt text for all images</li>
+          <li>Keyboard-focusable navigation</li>
+          <li>Readable contrast & font sizes</li>
+          <li>Correct heading hierarchy</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>2. Desktop Layout (≥ 1024px)</h2>
+    <ul>
+      <li>Logo on the left, header title next to it.</li>
+      <li>Navigation menu with 4 items arranged horizontally.</li>
+      <li>Main content includes two grid sections:
+        <ul>
+          <li>Left image + right text block</li>
+          <li>Left text block + right smaller image</li>
+        </ul>
+      </li>
+      <li>Full-width footer.</li>
+    </ul>
+
+    <h2>3. Mobile Layout (< 1024px)</h2>
+    <ul>
+      <li>Header shows only title.</li>
+      <li>Menu buttons appear in a <strong>2 × 2 grid</strong>.</li>
+      <li>Main image and text stack vertically.</li>
+      <li>Footer remains full width.</li>
+    </ul>
+
+    <h2>4. Notes</h2>
+    <ul>
+      <li>The layout shown is a wireframe, so visual styling is up to you.</li>
+      <li>Images should have descriptive alt text for screen readers.</li>
+      <li>Focus outlines must not be disabled.</li>
+    </ul>
+  </div>
+</body>
+</html>
