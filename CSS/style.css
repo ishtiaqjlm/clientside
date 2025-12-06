@@ -368,3 +368,88 @@ a{text-decoration:none;color:inherit}
 .hotels .card a.book-link:hover {
     text-decoration: underline; /* Optional: show underline on hover */
 }
+/*Student Disclaimer*/
+.student-disclaimer {
+    background-color: #004085; /* Dark Blue matching your theme */
+    color: #ffffff;            /* White text for contrast */
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* Footer CSs Start*/
+ #imageLightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    #imageLightbox img {
+      max-width: 100%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    #closeLightbox {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .site-footer {
+      background-color: #003366; 
+      color: white;              
+      padding: 40px 0;        
+    }
+
+    .footer-content {
+      display: flex;             
+      justify-content: space-around; 
+      align-items: flex-start;   
+      flex-wrap: wrap;           
+      max-width: 1200px;         
+      margin: 0 auto;            
+    }
+
+    .footer-section {
+      flex: 1;                   
+      padding: 0 20px;           
+      min-width: 250px;          
+    }
+
+    /* Typography Styling */
+    .footer-section strong {
+      display: block;            
+      margin-bottom: 15px;       
+      font-size: 1.1rem;
+      color: #ffcc00;            
+      text-transform: uppercase;
+    }
+
+    .footer-section p {
+      margin: 5px 0;             
+      font-size: 0.9rem;
+      opacity: 0.9;              
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;          
+      padding-top: 20px;         
+      border-top: 1px solid rgba(255, 255, 255, 0.1); 
+      font-size: 0.85rem;        
+      opacity: 0.7;            
+    }
+    /* Footer CSS End*/
