@@ -34,9 +34,9 @@
 
     <button class="menu-toggle">☰</button>
   </div>
-  <div style="text-align: center; font-weight: 600; font-size: 1.2rem;">
-            The project is made by students and it is used for teaching only.
-  </div>
+  <div class="student-disclaimer">
+    This project is made by students for educational purposes only.
+</div>
 </header>
 
 <main>
@@ -102,23 +102,34 @@
 </main>
 
 <footer class="site-footer">
-  
+  <div class="footer-content">
+    
+    <div class="footer-section">
+      <strong>Visit Ethiopia</strong>
+      <p>Explore, Discover, Experience.</p>
+    </div>
 
-<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
-  <div><strong>contacts : Ethiopian Tourism Organization </strong><p>phone number : +2511916481477</p>
-  <p>email: visitethiopia@gmai.com</p>
+    <div class="footer-section">
+      <strong>Ethiopian Tourism Organization</strong>
+      <p>Phone: +251 191 648 1477</p>
+      <p>Email: <a href="mailto:visitethiopia@gmail.com">visitethiopia@gmail.com</a></p>
+    </div>
+
+    <div class="footer-section">
+      <strong>Location</strong>
+      <p>
+        <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
+          View on Google Maps
+        </a>
+      </p>
+    </div>
+
   </div>
-  <div>
-  <strong>  Location</strong>
-  <p>
-    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
-      View on Google Maps
-    </a>
-  </p>
-
+  <div class="footer-bottom">
+  &copy; <span id="year"></span> Visit Ethiopia. All Rights Reserved.
 </div>
 
-  <!--<h2>Recommended Hotels</h2>-->
+
 </footer>
 
 <!-- MOBILE MENU SCRIPT -->
@@ -130,6 +141,6 @@
     nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
   });
 </script>
-
+<script src="js/scripts.js"></script>
 </body>
 </html>

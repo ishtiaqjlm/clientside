@@ -29,9 +29,9 @@
     </nav>
     <button class="menu-toggle">☰</button>
   </div>
-  <div style="text-align: center; font-weight: 600; font-size: 1.2rem;">
-            The project is made by students and it is used for teaching only.
-  </div>
+  <div class="student-disclaimer">
+    This project is made by students for educational purposes only.
+</div>
 </header>
 
 <main>
@@ -95,19 +95,6 @@
     </div>
   </section>-->
 </main>
-
-<footer class="site-footer">
-  <!--<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
-  <div><strong>contacts </strong><p>+251916481477</p>
-  <p>visitethiopia@gmai.com</p>
-  </div>
-  <div>
-  <strong>Location</strong>
-  <p>
-    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
-      View on Google Maps
-    </a>
-  </p>-->
   <section class="hotels">
   <h2>Recommended Hotels</h2>
   <div class="grid cols-3">
@@ -132,26 +119,36 @@
   </div>
 </section>
 
-<div><strong>Visit Ethiopia</strong><p>Explore, Discover, Experience.</p></div>
-  <div><strong>contacts : Ethiopian Tourism Organization </strong><p>phone number : +2511916481477</p>
-  <p>email: visitethiopia@gmail.com</p>
-  </div>
-  <div>
-  <strong>  Location</strong>
-  <p>
-    <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
-      View on Google Maps
-    </a>
-  </p>
+<footer class="site-footer">
+  <div class="footer-content">
+    
+    <div class="footer-section">
+      <strong>Visit Ethiopia</strong>
+      <p>Explore, Discover, Experience.</p>
+    </div>
 
+    <div class="footer-section">
+      <strong>Ethiopian Tourism Organization</strong>
+      <p>Phone: +251 191 648 1477</p>
+      <p>Email: <a href="mailto:visitethiopia@gmail.com">visitethiopia@gmail.com</a></p>
+    </div>
+
+    <div class="footer-section">
+      <strong>Location</strong>
+      <p>
+        <a href="https://maps.app.goo.gl/RRPnk1ho6EVLP6Pg9" target="_blank">
+          View on Google Maps
+        </a>
+      </p>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+  &copy; <span id="year"></span> Visit Ethiopia. All Rights Reserved.
 </div>
 
-  <!--<h2>Recommended Hotels</h2>-->
+
 </footer>
-
-<script src="js/scripts.js"></script>
-
-<!-- ------------------ START: Booking + Payment (Fixed) ------------------ -->
 
 <!-- Booking Modal -->
 <div id="bookingModal" class="booking-modal" aria-hidden="true" style="display:none;">
@@ -485,46 +482,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,cca2')
     <span id="closeLightbox">✖</span>
     <img src="" id="lightboxImg">
   </div>
-
-  <script>
-
-    // Get all images on the page
-    const allImages = document.querySelectorAll("img");
-
-    const lightbox = document.getElementById("imageLightbox");
-    const lightboxImg = document.getElementById("lightboxImg");
-    const closeLightbox = document.getElementById("closeLightbox");
-
-    // Add click event to each image
-    allImages.forEach(img => {
-      img.style.cursor = "pointer";
-      img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-      });
-    });
-
-    // Close the lightbox
-    closeLightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
-    });
-
-    // Close when clicking outside the image
-    lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) {
-        lightbox.style.display = "none";
-      }
-    });
-
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-
-  toggle.addEventListener('click', () => {
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-  });
-  </script>
-
-
+<script src="js/scripts.js"></script>
 </body>
 </html>
 
